@@ -67,7 +67,7 @@ async function reserveCar() {
     const total = car.price * days;
 
     console.log(
-        `\n------------------------\n\n✅ RESERVATION CONFIRMEE !\nVoiture : ${
+        `\n------------------------\n\n✅  RESERVATION CONFIRMEE !\nVoiture : ${
             car.name
         }\nDurée : ${days} jours\nTotal : ${total.toFixed(2)} € \n \n------------------------`
     );
@@ -90,7 +90,7 @@ async function main() {
         if (choice === '1') {
             await reserveCar();
         } else if (choice === '2') {
-            console.log('\nÀ bientôt !');
+            console.log('\nÀ bientôt !\n');
             break;
         } else {
             console.log('xxx Choix invalide !!! Veuillez réessayer.');
